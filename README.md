@@ -1,6 +1,6 @@
 # EPIC
 
-Creating a hub page for EPIC or Educational Partnerships with Indigenous Communities 
+Creating a hub page for EPIC or Educational Partnerships with Indigenous Communities
 
 ## Getting Started
 
@@ -58,9 +58,8 @@ Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [TEMPLATED](https://templated.co/interphase) - The html template used
+
 
 ## Contributing
 
@@ -72,7 +71,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Laiqa Shariff** - *Initial work* - [Laiqa19](https://github.com/laiqa19)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 

@@ -891,7 +891,9 @@ body.landing #header {
 }
 
 #header h1 a {
-	font-size: 1.25em;
+	font-size: 2em;
+	font-weight: bold;
+	font-family: 'Bungee Hairline', cursive;
 }
 
 #header nav {
@@ -1101,24 +1103,25 @@ body.landing #header {
     display: block;
     margin: auto;
     position: relative;
+		text-align: center;
+		color: black;
 }
-
 /*Gooey menu*/
 .menu_opener {
   display: none;
 }
 
 .menu_opener:checked ~ .link_one {
-  top: -135px;
+  top: -150px;
 }
 .menu_opener:checked ~ .link_two {
-  left: 385px;
+  left: 460px;
 }
 .menu_opener:checked ~ .link_three {
-  top: 185px;
+  top: 280px;
 }
 .menu_opener:checked ~ .link_four {
-  left: 65px;
+  left: 30px;
 }
 /*
 .menu_opener:checked ~ .link_five {
@@ -1153,14 +1156,14 @@ body.landing #header {
 
 .menu_opener_label {
   background: #848484;
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 250px;
   display: block;
   cursor: pointer;
   border-radius: 50%;
   position: absolute;
-  top: 0;
-  left: 200px;
+  top: 24px;
+  left: 180px;
   z-index: 10;
 }
 
@@ -1177,8 +1180,8 @@ body.landing #header {
 }
 
 .link_general {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   display: block;
   border-radius: 50%;
   position: absolute;
@@ -1187,6 +1190,12 @@ body.landing #header {
   background: #BDBDBD;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
+	font-size: 18px;
+
+	color: white;
+}
+.circletext{
+	line-height: 4.5em;
 }
 
 /* .menu_opener:checked ~ .link_one {
@@ -1309,74 +1318,6 @@ body.landing #header {
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 } */
-@media only screen and (max-width: 690px) {
-	/* For mobile phones: */
-	.menu_opener {
-	  display: none;
-	}
-
-	.menu_opener:checked ~ .link_one {
-	  top: -90px;
-	}
-	.menu_opener:checked ~ .link_two {
-	  left: 345px;
-	}
-	.menu_opener:checked ~ .link_three {
-	  top: 145px;
-	}
-	.menu_opener:checked ~ .link_four {
-	  left: 105px;
-	}
-	.menu_opener:checked ~ .barre_hamburger {
-	  opacity: 0;
-	}
-	.menu_opener:checked ~ .menu_opener_label:after {
-	  transform: rotate(45deg);
-	  top: -130px;
-	}
-	.menu_opener:checked ~ .menu_opener_label:before {
-	  transform: rotate(-45deg);
-	  top: -130px;
-	}
-
-	.menu_opener_label {
-	  background: #848484;
-	  width: 100px;
-	  height: 100px;
-	  display: block;
-	  cursor: pointer;
-	  border-radius: 50%;
-	  position: absolute;
-	  top: 0;
-	  left: 200px;
-	  z-index: 10;
-	}
-
-	.barre_hamburger {
-	  width: 50px;
-	  height: 10px;
-	  position: absolute;
-	  top: -130px;
-	  left: 250px;
-	  background: #000;
-	  z-index: 20;
-	  -webkit-transition: all 0.4s ease;
-	  transition: all 0.4s ease;
-	}
-
-	.link_general {
-	  width: 60px;
-	  height: 60px;
-	  display: block;
-	  border-radius: 50%;
-	  position: absolute;
-	  top: 25px;
-	  left: 225px;
-	  background: #BDBDBD;
-	  -webkit-transition: all 0.4s ease;
-	  transition: all 0.4s ease;
-	}
-}
 /** code for modal pop up*/
 /*
 

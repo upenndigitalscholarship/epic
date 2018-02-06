@@ -6,73 +6,72 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 -->
 <html lang="en">
 <head>
-	<link href="https://fonts.googleapis.com/css?family=Bungee+Hairline" rel="stylesheet">
-	<meta charset="UTF-8">
-	<title>EPIC</title>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
-	<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/skel.min.js"></script>
-	<script src="js/skel-layers.min.js"></script>
-	<script src="js/init.js"></script>
-	<noscript>
-		<link rel="stylesheet" href="css/skel.css" />
-		<link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="css/style-xlarge.css" />
-	</noscript>
-	<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>EPIC</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/skel.min.js"></script>
+    <script src="js/skel-layers.min.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/modal.js"></script>
+
+    <noscript>
+        <link rel="stylesheet" href="css/skel.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/style-xlarge.css" />
+        <!-- MODAL <link rel="stylesheet" href="css/modal.css" />-->
+
+    </noscript>
+    <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 </head>
 <body class="landing">
+    <div class="site">
+        <div class="site-content">
 
-	<!-- Header -->
-	<header id="header">
-		<h1><a href="index.html">Educational Partnerships with Indigenous Communities</a></h1>
-		</header>
-		<!-- <nav id="nav">
-			<ul>
-				<li><a href="index.html">About</a></li>
-				<li><a href="generic.html">Partners</a></li>
-				<li><a href="elements.html">EP</a></li>
-			</ul>
-		</nav> -->
+            <!-- Header -->
+            <header id="header">
+                <h1><a href="index.html">Educational Partnerships with Indigenous Communities</a></h1>
+            </header>
 
-	<!-- Banner -->
-	<section id="banner">
-		<h2></h2>
-		<!-- <p>Welcome to the HubPage.</p> -->
-		<!--<ul class="actions">
-			<li>
-				<a href="#" class="button big">Enter</a>
-			</li>
-		</ul>-->
-		<div class="circle">
-				<input type="checkbox" id="menu_opener_id" class="menu_opener">
-				  <label for="menu_opener_id" class="menu_opener_label"></label>
-				  <!--<div class="barre_hamburger"></div>-->
-				  <a href="#" class="link_one link_general">
-						<h4 class="circletext">About </h4></a>
-				  <a href="#" class="link_two link_general">
-					<h4 class="circletext">Partnerships</h4></a>
-				  <a href="#" class="link_three link_general">
-					<h4 class="circletext">Student Projects</h4></a>
-				  <a href="#" class="link_four link_general">
-					<h4 class="circletext">Tribal Projects</h4></a>
-					<!--
-					<a href="#" class="link_five link_general"></a>
-					<a href="#" class="link_six link_general"></a>
-					<a href="#" class="link_seven link_general"></a>
-					<a href="#" class="link_eight link_general"></a>
-					<a href="#" class="link_nine link_general"></a>
-					<a href="#" class="link_ten link_general"></a>
-					<a href="#" class="link_eleven link_general"></a>
-					<a href="#" class="link_twelve link_general"></a>
-					<a href="#" class="link_thirteen link_general"></a>
-				-->
-				</input>
-		</div>
-	</section>
+            <div class="sidebox">
+                <p><a href="index.html">Name Sign Out</a></p>
+                <p>Dashboard Index Guide</p>
+            </div>
+            <!-- Banner -->
+            <section id="banner">
+                <div class="circle">
+                    <input type="checkbox" id="menu_opener_id" class="menu_opener">
+                    <label for="menu_opener_id"class="menu_opener_label"></label>
 
-</body>
-</html>
+                    <a href="#" class="link_one link_general button--circular button" data-modal="test" data-action="open" type="button">
+                        <h4 class="circletext">About </h4></a>
+                        <a href="#" class="link_two link_general">
+                            <h4 class="circletext">Partnerships</h4></a>
+                            <a href="#" class="link_three link_general">
+                                <h4 class="circletext">Student Projects</h4></a>
+                                <a href="#" class="link_four link_general">
+                                    <h4 class="circletext">Tribal Projects</h4></a>
+                                </input>
+                            </div>
+                        </section>
+
+                        <div class="overlay">
+                            <div class="overlay__ripple"></div>
+                        </div>
+                        <div class="modal-wrapper">
+                            <div class="modal" data-modal="test">
+                                <h1 style="font-size: 35px; line-height: 35px; margin: 0 0 14px 0;">I am David Bushell</h1>
+                                <p style="color:#919599; font-size: 17px; line-height: 21px; margin: 0 0 21px 0;"><a href="http://dbushell.com/">I freelance</a> for small businesses, start-ups, individuals, and fellow web agencies.</p>
+                                <div class="modal__footer">
+                                    <button class="button" data-action="close" type="button">Awesome!</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </body>
+            </html>

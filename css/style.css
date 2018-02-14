@@ -5,7 +5,7 @@
 html {
   height: 100%;
   color: #494b4d;
-  font-family: 'Droid Serif', serif;
+  font-family: 'Bungee Hairline', cursive;
 }
 
 body {
@@ -27,7 +27,7 @@ body.js-lock-pointer {
 
 body, input, select, textarea {
 	color: #444;
-	font-family: "Lato", Helvetica, sans-serif;
+	font-family: 'Bungee Hairline', cursive;
 	font-size: 15pt;
 	font-weight: 300;
 	line-height: 1.65em;
@@ -60,7 +60,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	color: #666;
+	color: white;
 	font-weight: 300;
 	line-height: 1em;
 	margin: 0 0 1em 0;
@@ -82,7 +82,7 @@ h3 {
 }
 
 h4 {
-	font-size: 1.1em;
+	font-size: 1em;
 	line-height: 1.5em;
 }
 
@@ -163,8 +163,11 @@ pre code {
 
 .sidebox {
 	margin-top:1em;
+  margin-left: 65em;
+  margin-bottom: 3em;
 	color: white;
 	line-height: 0.2em;
+
 }
 
 /*simple circle*/
@@ -240,7 +243,8 @@ pre code {
 }
 
 .circletext{
-	line-height: 7em;
+	line-height: 1.5em;
+  margin-top: 50px;
 }
 
 /* Modal Styles */
@@ -266,9 +270,10 @@ pre code {
 }
 
 .modal-window>div {
-  width: 70%;
+  width: 90%;
+  height: 80%;
   position: relative;
-  margin: 10% auto;
+  margin: 5% auto;
   padding: 2rem;
   background: #fff;
   color: #444;

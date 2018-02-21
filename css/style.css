@@ -13,8 +13,10 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+    background-attachment: fixed;
 	height: 100%;
   overflow-x: hidden;
+  margin: 0;
 }
 
 body.js-lock-scroll {
@@ -62,13 +64,20 @@ p {
 h1, h2, h3, h4, h5, h6 {
 	color: white;
 	font-weight: 300;
-	line-height: 1em;
+	line-height: 2em;
 	margin: 0 0 1em 0;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 	color: inherit;
 	text-decoration: none;
+}
+
+h1 {
+  padding-left: 40px;
+  background-color: black;
+  opacity: 0.8;
+  font-weight: 600;
 }
 
 h2 {
@@ -161,45 +170,71 @@ pre code {
 	text-align: right;
 }
 
-.sidebox {
-	margin-top:1em;
-  margin-left: 65em;
-  margin-bottom: 3em;
-	color: white;
-	line-height: 0.2em;
-
+/*footer*/
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+.page-wrap {
+  height: 100%;
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -95px;
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  height: 95px;
+}
+.site-footer {
+  background: black;
+  opacity: 0.9;
+  font-weight: 800;
+  line-height: 0.85em;
 }
 
 /*simple circle*/
 .circle {
     margin-top: 150px;
     width: 550px;
+    height: 100%;
     display: block;
     margin: auto;
     position: relative;
 		text-align: center;
 		color: black;
+    margin-bottom: -50px;
 }
 
 /*Gooey menu*/
+#banner {
+  height: 100%;
+}
+
 .menu_opener {
   display: none;
 }
 
 .menu_opener:checked ~ .link_one {
-  top: -150px;
+  top: -1%;
 }
 
 .menu_opener:checked ~ .link_two {
-  left: 460px;
+  left: 88%;
+  top: 25%;
 }
 
 .menu_opener:checked ~ .link_three {
-  top: 294px;
+  top: 52%;
 }
 
 .menu_opener:checked ~ .link_four {
-  left: 0px;
+  left: -4%;
+  top: 25%;
 }
 
 .menu_opener:checked ~ .menu_opener_label:after {
@@ -220,7 +255,7 @@ pre code {
   cursor: pointer;
   border-radius: 50%;
   position: absolute;
-  top: 24px;
+  top: 20%;
   left: 180px;
   z-index: 10;
 	border: 1px solid #ffffff;
@@ -232,8 +267,8 @@ pre code {
   display: block;
   border-radius: 50%;
   position: absolute;
-  top: 70px;
-  left: 225px;
+  top: 30%;
+  left: 42%;
   background: #BDBDBD;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
@@ -245,6 +280,14 @@ pre code {
 .circletext{
 	line-height: 1.5em;
   margin-top: 50px;
+  color: black;
+  font-weight: bold;
+}
+
+.logo_image {
+    height: 70%;
+    margin-top: 20%;
+    margin-right: 3%
 }
 
 /* Modal Styles */

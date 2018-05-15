@@ -1,9 +1,9 @@
-<link rel="stylesheet" href="epic/css/style.css" />
+<?$this->template->add_css('epic/css/style.css')?>
 <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline" rel="stylesheet">
 <div class="page-wrap">
     <!-- Header -->
     <header id="header">
-        <h1>Educational Partnerships with Indigenous Communities</h1>
+        <h2>Educational Partnerships with Indigenous Communities</h2>
     </header>
 
 
@@ -50,6 +50,19 @@
     <div>
         <a href="#modal-close" title="Close" class="modal-close">Close</a>
         <div>STUDENT PROJECTS</div>
+        <?php
+            if ($login->is_logged_in) {
+        	echo '<div id="user_books">';
+        	echo '<h3>Your Books</h3>';
+        	if (count($user_books) > 0) {
+        		echo '<ul class="book_icons">';
+        		print_books($user_books, true);
+        	} else {
+        		echo '<p>You haven\'t created any books yet. You can in the Dashboard\'s My Account tab.</p>';
+        	}
+        	echo '</div>';
+        }
+        ?>
     </div>
 </div>
 

@@ -383,6 +383,18 @@ pre code {
 
 #other_books .book_icons li {
     background: transparent;
-    height: fit-content;
-    width: 100%;
+    height: 100%;
+    width: 100% !important;
+}
+
+#other_books .book_icons p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.content {
+    overflow-y: scroll;
+}
+
+.content::-webkit-scrollbar { 
+    display: none; 
 }

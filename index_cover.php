@@ -1,6 +1,7 @@
 <?if (!defined('BASEPATH')) exit('No direct script access allowed')?>
 <link rel="stylesheet" href="epic/css/style.css" />
 <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 <link rel="stylesheet" href="system/application/views/melons/cantaloupe/css/header.css">
 <link rel="stylesheet" href="system/application/views/melons/cantaloupe/css/bootstrap.min.css">
 <script src="system/application/views/melons/cantaloupe/js/bootstrap.min.js"></script>

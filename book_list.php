@@ -15,6 +15,8 @@ function print_books($books, $is_large=false) {
 	foreach ($books as $row) {
 		$uri 		   = confirm_slash(base_url()).$row->slug;
 		$title		   = trim($row->title);
+		$subtitle      = trim($row->subtitle);
+		$description   = trim($row->description);
 		$book_id       = (int) $row->book_id;
 		$thumbnail     = (!empty($row->thumbnail)) ? confirm_slash($row->slug).$row->thumbnail : null;
 		$is_live       = ($row->display_in_index) ? true : false;
@@ -30,6 +32,7 @@ function print_books($books, $is_large=false) {
 		    echo "<h3>";
 			echo implode(', ',$authors);
 			echo "</h3>";
+			echo "<p>" . $description . "</p>";
 		}
 		echo '</li>';
 	}
